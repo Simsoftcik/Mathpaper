@@ -1,12 +1,12 @@
 import { View, Text } from 'react-native'
 import React from 'react'
 
-const saved: React.FC = () => {
+const home: React.FC = () => {
   return (
     <View>
-      <Text>saved</Text>
+      <Text>home</Text>
     </View>
   )
 }
 
-export default saved
+export default home

@@ -1,10 +1,19 @@
-import { View, Text } from 'react-native'
+import { View, Text, FlatList } from 'react-native'
 import React from 'react'
+import DailyCard from '@/components/DailyCard'
+import dailyWallpapersData from '../../assets/json/dailyWallpapers.json'
 
-const daily = () => {
+const daily: React.FC = () => {
   return (
     <View>
-      <Text>daily</Text>
+      <FlatList
+        data={dailyWallpapersData}
+        renderItem={({item}) => 
+          <DailyCard id={item.id} title={item.title} subtitle={item.subtitle} imageKey={item.imageKey} description={item.description}/>
+        }
+      >
+
+      </FlatList>
     </View>
   )
 }

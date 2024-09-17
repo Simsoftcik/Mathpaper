@@ -1,0 +1,9 @@
+[
+    {
+        "id": 0,
+        "title": "Tree of the day",
+        "subtitle": "A colorful tree graph that reminds you that every single day matters",
+        "description": "Generated using a graph-determining Prufer code, which utilizes a number created by concatenating the day, month, and year as input.",
+        "imageKey": "tree"
+    }
+]

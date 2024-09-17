@@ -1,8 +1,9 @@
 import { View, Text } from 'react-native'
 import React from 'react'
 import { Tabs } from 'expo-router'
+// import { Icon } from 'react-native-vector-icons/FontAwesome';
 
-const TabsLayout = () => {
+const TabsLayout: React.FC = () => {
   return (
     <Tabs
         screenOptions={{
@@ -10,9 +11,21 @@ const TabsLayout = () => {
         }}
         >
             <Tabs.Screen
+                name="home"
+                options={{
+                    headerShown: false,
+                    // tabBarIcon: ({ color, focused }) => (
+                    //     <Icon name="home"/>
+                    // ),
+                }}
+            />
+            <Tabs.Screen
                 name="daily"
                 options={{
-                headerShown: false
+                headerShown: false,
+                // tabBarIcon: ({ color, focused }) => (
+                //     <Icon name="home"/>
+                // ),
                 }}
             />
             <Tabs.Screen
