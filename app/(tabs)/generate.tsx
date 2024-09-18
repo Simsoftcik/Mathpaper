@@ -3,11 +3,17 @@ import { useState, useEffect } from 'react'
 import Graph from '@/components/Graph'
 import createDrzewko from '../../logic/treeOfTheDay'
 
-const [date, setDate] = useState(new Date()) 
-const [drzewko, setDrzewko] = useState({ nodes: [], links: [] }) 
+function formatDate(date: Date): string {
+  return (date.getDate()>=10 ? date.getDate() : '0'+date.getDate()) + '.' + (date.getMonth()>=10 ? date.getMonth() : '0'+date.getMonth()) + '.' + date.getFullYear()
+}
 
-useEffect(() => { 
-    let newDrzewko = createDrzewko(date.getDate() + '.' + date.getMonth() + '.' + date.getFullYear())
+const Generate: React.FC = () => {
+
+  const [date, setDate] = useState(new Date()) 
+  const [drzewko, setDrzewko] = useState({ nodes: [], links: [] })
+
+  useEffect(() => {  
+    let newDrzewko = createDrzewko(formatDate(date))
     setDrzewko(newDrzewko)
     const updateDate = () => setDate(new Date());
     const intervalId = setInterval(() => {
@@ -18,7 +24,6 @@ useEffect(() => {
     }, 60000);
   }, [date])
 
-const generate: React.FC = () => {
   return (
     <View>
       <Graph drzewko={drzewko}/>
@@ -26,4 +31,4 @@ const generate: React.FC = () => {
   )
 }
 
-export default generate
+export default Generate
