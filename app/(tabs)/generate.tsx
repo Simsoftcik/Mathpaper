@@ -1,10 +1,10 @@
 import { View, Text } from 'react-native'
-import React from 'react'
+import Graph from '@/components/Graph'
 
 const generate: React.FC = () => {
   return (
     <View>
-      <Text>generate</Text>
+      <Graph />
     </View>
   )
 }
