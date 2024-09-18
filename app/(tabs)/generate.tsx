@@ -4,7 +4,7 @@ import Graph from '@/components/Graph'
 import createDrzewko from '../../logic/treeOfTheDay'
 
 function formatDate(date: Date): string {
-  return (date.getDate()>=10 ? date.getDate() : '0'+date.getDate()) + '.' + (date.getMonth()>=10 ? date.getMonth() : '0'+date.getMonth()) + '.' + date.getFullYear()
+  return (date.getDate()>=10 ? date.getDate() : '0'+date.getDate()) + '.' + (date.getMonth()+1>=10 ? date.getMonth()+1 : '0'+(date.getMonth()+1)) + '.' + date.getFullYear()
 }
 
 const Generate: React.FC = () => {
@@ -22,7 +22,7 @@ const Generate: React.FC = () => {
             updateDate();
         }
     }, 60000);
-  }, [date])
+  }, [date.getDate()])
 
   return (
     <View>
