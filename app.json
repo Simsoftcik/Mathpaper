@@ -8,9 +8,11 @@
     "scheme": "mathpaper",
     "userInterfaceStyle": "automatic",
     "splash": {
-      "image": "./assets/images/splash.png",
+      "image": "./assets/images/splash-1.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#ffffff",
+      "height": "100",
+      "width": "100"
     },
     "ios": {
       "supportsTablet": true
