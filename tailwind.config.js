@@ -11,7 +11,7 @@ module.exports = {
         secondary2: '#bdffe8',
         darkPrimary1: '#0a0099',
         lightPrimary1: "#b9b4ff",
-        neutral1: "#8c8c8c"
+        neutral1: "#737272"
       },
       fontFamily: {
         // 'ubuntu-bold' : ['Ubuntu-Bold', 'sans-serif'],

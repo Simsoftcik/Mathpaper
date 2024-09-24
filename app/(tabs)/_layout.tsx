@@ -49,6 +49,12 @@ const TabsLayout: React.FC = () => {
                 ),
                 }}
             />
+            {/* <Tabs.Screen
+                name="[wallpaper]"
+                options={{
+                    href: null
+                }}
+            /> */}
     </Tabs>
   )
 }
