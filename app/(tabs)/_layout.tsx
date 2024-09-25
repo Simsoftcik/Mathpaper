@@ -1,4 +1,4 @@
-import { View, Text } from 'react-native'
+import { View, Text, StatusBar } from 'react-native'
 import React from 'react'
 import { Tabs } from 'expo-router'
 import Icon from 'react-native-vector-icons/FontAwesome';
@@ -6,6 +6,12 @@ import TabsIcon from '@/components/TabsIcon';
 
 const TabsLayout: React.FC = () => {
   return (
+    <>   
+    <StatusBar 
+        backgroundColor="transparent" 
+        barStyle="dark-content" // or "light-content" depending on your design
+        translucent={true} 
+      />
     <Tabs
         screenOptions={{
             tabBarShowLabel: false,
@@ -56,6 +62,8 @@ const TabsLayout: React.FC = () => {
                 }}
             /> */}
     </Tabs>
+    </>
+
   )
 }
 

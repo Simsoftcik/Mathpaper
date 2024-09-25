@@ -2,8 +2,14 @@
     {
         "id": 0,
         "title": "Tree of the day",
-        "subtitle": "A colorful tree graph that reminds you that every single day matters",
+        "subtitle": "A colorful tree graph that will never be the same twice",
         "description": "Generated using a graph-determining Prufer code, which utilizes a number created by concatenating the day, month, and year as input.",
+        "imageKey": "tree"
+    },{
+        "id": 1,
+        "title": "Example",
+        "subtitle": "Example subtitle",
+        "description": "Example description",
         "imageKey": "tree"
     }
 ]

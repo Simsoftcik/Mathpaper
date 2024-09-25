@@ -6,12 +6,12 @@ module.exports = {
       colors: {
         // background: "#e6e6ff",
         primary1: '#5e53ff',
-        primary2: '#57ffc5',
+        primary2: '#0ebd6e',
         secondary1: '#b9b4ff',
         secondary2: '#bdffe8',
-        darkPrimary1: '#0a0099',
-        lightPrimary1: "#b9b4ff",
-        neutral1: "#737272"
+        tetriary1: '#e7e6ff',
+        neutral1: "#737272",
+        neutral2: "#d9d9d9"
       },
       fontFamily: {
         // 'ubuntu-bold' : ['Ubuntu-Bold', 'sans-serif'],
