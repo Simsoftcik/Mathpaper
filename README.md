@@ -1,21 +1,12 @@
-Nie wiem czy poniższa komenda nie wywali ci błędu że expo nie ma bo mi samo dodawało przy tworzeniu apki, duża szansa bo całe node modules są w gitignore. Wtedy po prostu `npm i expo` czy coś
+> Still in development
 
-`npx expo install expo-router react-native-safe-area-context react-native-screens expo-linking expo-constants expo-status-bar`
 
-+ komendy z instalacji nativewinda na ich stronce w zakładce expo
+# Mathpaper - Daily mathematical wallpapers to make every day matter
 
-+ ikonki
-`npm install --save react-native-vector-icons`
-
+**Mathpaper** is a mobile application built with **React Native** and **Expo** that will generate beautiful wallpapers based on mathematical patterns. If you love geometry, symmetry, and want to decorate your phone with something extraordinary, Mathpaper will be the perfect tool for you! 📱✨
 
 ---
 
-Ponoć dla działania tego ostatniego na IOS trzeba dodać to do Info.plist, ale zakładam ze to na etapie buildowania apki:
-```
-<key>UIAppFonts</key>
-<array>
-  <string>Fonts/MaterialIcons.ttf</string>
-  <string>Fonts/FontAwesome.ttf</string>
-  <string>Fonts/Ionicons.ttf</string>
-</array>
-```
+## 📜 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
